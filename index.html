@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مساجد | منصة تشغيلية ذكية لبيوت الله</title>
+<meta name="description" content="منصة «مساجد» السعودية تربط المشرف العام ومشرف المساجد والإمام في رحلة بلاغ واحدة، من الرصد إلى الإغلاق.">
+<meta name="theme-color" content="#03110d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Reem+Kufi:wght@500;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="masgad1.css">
+</head>
+<body>
+<div class="progress"><i id="prog"></i></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="lg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff0b8"/><stop offset="1" stop-color="#e6b85c"/></linearGradient>
+    <symbol id="mosque" viewBox="0 0 200 200">
+      <path d="M20 200V122h160v78z"/>
+      <path d="M48 122C48 78 86 66 100 30c14 36 52 48 52 92z"/>
+      <path d="M99 30V10h2v20z"/>
+      <path d="M108 4a8 8 0 1 0 0 11a6.5 6.5 0 1 1 0-11z"/>
+      <path d="M6 200V70h14v130z"/><path d="M4 70l9-34 9 34z"/><path d="M2 92h22v5H2z"/>
+      <path d="M180 200V70h14v130z"/><path d="M178 70l9-34 9 34z"/><path d="M176 92h22v5h-22z"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="hdr" id="hdr">
+  <div class="container row">
+    <a href="#top" class="logo disp">
+      <span class="logo-mark"><svg viewBox="0 0 32 32"><path d="M6 28V18h20v10"/><path d="M9 18c0-5 4-6 7-11 3 5 7 6 7 11"/><path d="M16 7V3"/></svg></span>
+      مساجد
+    </a>
+    <nav class="nav">
+      <a href="#idea">الفكرة</a><a href="#journey">رحلة البلاغ</a>
+      <a href="#features">المميزات</a><a href="#partners">الشركاء</a>
+    </nav>
+    <div class="hdr-cta">
+      <a href="#partners" class="btn btn-gold btn-sm">انضم كشريك</a>
+      <button class="burger" id="burger" aria-label="القائمة"><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="drawer" id="drawer">
+  <a href="#idea">الفكرة</a><a href="#journey">رحلة البلاغ</a>
+  <a href="#features">المميزات</a><a href="#partners">الشركاء</a><a href="#partners" style="color:var(--gold)">انضم كشريك</a>
+</div>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="stars" id="heroStars"></div>
+  <svg class="moon" viewBox="0 0 100 100" aria-hidden="true"><defs><mask id="mm"><rect width="100" height="100" fill="#fff"/><circle cx="64" cy="40" r="34" fill="#000"/></mask></defs><circle cx="46" cy="54" r="36" fill="#f7dc9b" mask="url(#mm)"/></svg>
+  <svg class="lantern l1" viewBox="0 0 60 160" aria-hidden="true"><line x1="30" y1="0" x2="30" y2="60" stroke="#e6b85c" stroke-width="1.5"/><path d="M22 60h16l4 10H18z" fill="#c99632"/><path d="M16 70h28l5 16v34l-5 16H16l-5-16V86z" fill="url(#lg)" stroke="#e6b85c" stroke-width="1.5"/><path d="M30 70v66M20 70l-5 16v34M40 70l5 16v34" stroke="#7a5314" opacity=".45" fill="none"/><path d="M18 136h24l-4 10H22z" fill="#c99632"/><circle cx="30" cy="152" r="3" fill="#e6b85c"/></svg>
+  <svg class="lantern l2" viewBox="0 0 60 160" aria-hidden="true" style="width:34px"><line x1="30" y1="0" x2="30" y2="80" stroke="#e6b85c" stroke-width="1.5"/><path d="M22 80h16l4 10H18z" fill="#c99632"/><path d="M16 90h28l5 16v34l-5 16H16l-5-16v-34z" fill="url(#lg)" stroke="#e6b85c" stroke-width="1.5"/><path d="M30 90v66M20 90l-5 16v34M40 90l5 16v34" stroke="#7a5314" opacity=".45" fill="none"/></svg>
+
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="tag"><i></i>منصة سعودية لتشغيل المساجد</span>
+      <h1>
+        <span class="w" style="--i:0">من</span> <span class="w" style="--i:1">بلاغٍ</span> <span class="w" style="--i:2">يُرفع</span><br>
+        <span class="w shimmer" style="--i:3">إلى</span> <span class="w shimmer" style="--i:4">مسجدٍ</span> <span class="w shimmer" style="--i:5">يُضيء</span>
+        <svg class="underline-draw" viewBox="0 0 340 18" preserveAspectRatio="none"><path pathLength="1" d="M4 12C60 2 120 16 180 8s110 4 156 2"/></svg>
+      </h1>
+      <p class="sub">«مساجد» تربط المشرف العام ومشرف المساجد والإمام في منظومة واحدة: من رصد الاحتياج إلى إغلاق البلاغ، مع سجل كامل لمرافق كل مسجد.</p>
+      <div class="hero-btns">
+        <a href="#partners" class="btn btn-gold">انضم كشريك</a>
+        <a href="#screens" class="btn btn-line">شاهد التطبيق</a>
+      </div>
+      <div class="stats">
+        <div><b data-count="3">٣</b><span>أدوار متكاملة</span></div>
+        <div><b data-count="6">٦</b><span>مراحل للبلاغ</span></div>
+        <div><b data-count="7">٧</b><span>مرافق مسجّلة</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="chip c1"><svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9z"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>بلاغ جديد · مسجد النور</div>
+      <div class="chip c2"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.5 7-12.5A7 7 0 0 0 5 9.5C5 15.5 12 22 12 22z"/><circle cx="12" cy="9.5" r="2.3"/></svg>الموقع موثّق تلقائياً</div>
+      <div class="chip c3"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg>تم الإغلاق خلال ساعتين</div>
+      <div class="phone hero-phone" id="heroPhone">
+        <div class="ph-notch"></div>
+        <div class="ph-screen">
+          <div class="hp-top"><small>مسجد النور · حي السلامة</small><b>بلاغ #1042</b></div>
+          <div class="hp-map">
+            <svg viewBox="0 0 240 200" preserveAspectRatio="xMidYMid slice">
+              <path d="M0 140C60 120 100 150 160 110S220 90 240 80" stroke="rgba(255,255,255,.12)" stroke-width="10" fill="none"/>
+              <path d="M40 0C50 60 90 90 110 200" stroke="rgba(255,255,255,.1)" stroke-width="8" fill="none"/>
+              <path pathLength="1" d="M20 190C50 150 90 150 120 118" stroke="#e6b85c" stroke-width="2.5" fill="none" stroke-dasharray=".04 .03"><animate attributeName="stroke-dashoffset" from="0" to="-.7" dur="3s" repeatCount="indefinite"/></path>
+              <circle cx="120" cy="118" r="26" fill="rgba(94,234,176,.14)"><animate attributeName="r" values="14;34;14" dur="2.4s" repeatCount="indefinite"/></circle>
+              <path d="M120 128s10-8 10-15a10 10 0 0 0-20 0c0 7 10 15 10 15z" fill="#e6b85c"/><circle cx="120" cy="113" r="3.5" fill="#071f18"/>
+              <circle r="5" fill="#5eeab0"><animateMotion dur="5s" repeatCount="indefinite" path="M20 190C50 150 90 150 120 118"/></circle>
+            </svg>
+          </div>
+          <div class="hp-sheet">
+            <h4>تسريب مياه في دورة المياه</h4>
+            <div class="hs-row"><div class="hs"><i></i>مستلم</div><div class="hs"><i></i>مراجعة</div><div class="hs"><i></i>صيانة</div><div class="hs"><i></i>في الطريق</div><div class="hs"><i></i>مُغلق</div></div>
+            <div class="hp-status"><span class="dot"></span><span id="hpLabel">بانتظار الاستلام</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <svg class="skyline" id="skyline" viewBox="0 0 1440 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true"></svg>
+</section>
+
+<!-- IDEA -->
+<section class="sec" id="idea">
+  <div class="stars" id="ideaStars" style="opacity:.6"></div>
+  <div class="container" style="position:relative">
+    <div class="reveal"><span class="eyebrow">الفكرة</span>
+    <h2 class="h2">ثلاثة أدوار… <span class="shimmer">منظومة واحدة</span></h2>
+    <p class="lead">منصة إدارة تشغيلية تربط أصحاب القرار بميدان العمل مباشرة، وكل دور يرى ما يخصّه فقط.</p></div>
+    <div class="idea-grid">
+      <div class="orbit reveal" id="orbit" data-active="general">
+        <svg viewBox="0 0 600 600" aria-hidden="true"><g id="orbitRot" class="orbit-rot"></g><g class="n-center"><circle class="glow" cx="300" cy="300" r="70"/><circle class="core" cx="300" cy="300" r="46"/><use href="#mosque" x="274" y="274" width="52" height="52" fill="#e6b85c"/></g></svg>
+      </div>
+      <div class="roles reveal" style="--d:.15s" id="roles">
+        <button class="role active" data-role="general"><div class="top"><span class="num">٠١</span><h3>المشرف العام</h3></div><div class="body"><p>يشرف على كل المساجد ويطّلع على التقارير ومؤشرات الأداء لحظة بلحظة.</p></div></button>
+        <button class="role" data-role="supervisor"><div class="top"><span class="num">٠٢</span><h3>مشرف المساجد</h3></div><div class="body"><p>يتابع مجموعة مساجد في نطاقه، يستلم البلاغات ويحيلها لشركة الصيانة المناسبة.</p></div></button>
+        <button class="role" data-role="imam"><div class="top"><span class="num">٠٣</span><h3>الإمام</h3></div><div class="body"><p>يرصد احتياج مسجده، يرفع البلاغ من التطبيق ويسجّل مرافق المسجد ومميزاته.</p></div></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section class="sec arch light" id="journey">
+  <div class="container">
+    <div class="reveal" style="text-align:center"><span class="eyebrow">رحلة البلاغ</span>
+    <h2 class="h2">من الملاحظة إلى الحل… <span style="color:var(--emerald)">بست خطوات</span></h2>
+    <p class="lead" style="margin-inline:auto">كل بلاغ يسلك طريقاً واضحاً ومتابَعاً، بلا ضياع ولا تأخير.</p></div>
+    <div class="journey" id="journeyWrap">
+      <div class="spine" id="spine"><i id="spineFill"></i></div>
+
+      <article class="j-row">
+        <div class="j-text reveal"><span class="big">٠١</span><h3>الإمام يرصد المشكلة</h3><p>ملاحظة ميدانية داخل المسجد: تسريب، عطل، أو احتياج.</p></div>
+        <div class="j-node"><span>١</span></div>
+        <div class="j-art"><div class="blob"><svg viewBox="0 0 120 120"><path d="M14 100H106"/><path d="M26 100V66h68v34"/><path d="M34 66c0-20 16-22 26-40 10 18 26 20 26 40"/><path d="M60 26V15"/><circle cx="60" cy="11" r="3"/><path d="M52 100V86a8 8 0 0 1 16 0v14"/><path class="ac" d="M98 18l13 23H85z"/><path class="ac" d="M98 26v7"/><circle class="f" cx="98" cy="37" r="1.6"/></svg></div></div>
+      </article>
+
+      <article class="j-row">
+        <div class="j-text reveal"><span class="big">٠٢</span><h3>يرفع البلاغ من التطبيق</h3><p>بالصورة والوصف والموقع الجغرافي الموثّق تلقائياً.</p></div>
+        <div class="j-node"><span>٢</span></div>
+        <div class="j-art"><div class="blob"><svg viewBox="0 0 120 120"><rect x="38" y="12" width="44" height="90" rx="9"/><path d="M52 20h16"/><path class="ac" d="M60 44c-8 0-13 6-13 12 0 10 13 22 13 22s13-12 13-22c0-6-5-12-13-12z"/><circle class="ac" cx="60" cy="56" r="4.5"/><path d="M50 92h20"/><path d="M22 52a14 14 0 0 0 0 16"/><path d="M14 44a24 24 0 0 0 0 32"/><path d="M98 52a14 14 0 0 1 0 16"/><path d="M106 44a24 24 0 0 1 0 32"/></svg></div></div>
+      </article>
+
+      <article class="j-row">
+        <div class="j-text reveal"><span class="big">٠٣</span><h3>يستلمه المشرف</h3><p>مراجعة البلاغ وتصنيف أولويته خلال دقائق.</p></div>
+        <div class="j-node"><span>٣</span></div>
+        <div class="j-art"><div class="blob"><svg viewBox="0 0 120 120"><rect x="30" y="20" width="60" height="84" rx="8"/><rect x="46" y="12" width="28" height="14" rx="5"/><path d="M42 50h36M42 64h24"/><path class="ac" d="M42 84l8 8 16-18"/></svg></div></div>
+      </article>
+
+      <article class="j-row">
+        <div class="j-text reveal"><span class="big">٠٤</span><h3>يُحال لشركة الصيانة</h3><p>إسناد فوري للجهة المختصة مع كامل تفاصيل البلاغ.</p></div>
+        <div class="j-node"><span>٤</span></div>
+        <div class="j-art"><div class="blob"><svg viewBox="0 0 120 120"><circle cx="26" cy="52" r="6"/><path d="M14 74c1-10 23-10 24 0"/><path class="ac" d="M50 60h32"/><path class="ac" d="M74 52l8 8-8 8"/><circle cx="98" cy="60" r="10"/><circle cx="98" cy="60" r="3.5"/><path d="M98 44v6M98 70v6M82 60h6M108 60h6M87 49l4 4M105 67l4 4M109 49l-4 4M91 67l-4 4"/></svg></div></div>
+      </article>
+
+      <article class="j-row">
+        <div class="j-text reveal"><span class="big">٠٥</span><h3>تتوجه للموقع</h3><p>فريق الصيانة في الطريق، وتتبّع الوصول لحظة بلحظة.</p></div>
+        <div class="j-node"><span>٥</span></div>
+        <div class="j-art"><div class="blob"><svg viewBox="0 0 120 120"><path d="M10 100C36 100 34 74 58 74S84 62 100 58"/><path class="ac" d="M100 20c-8 0-13 6-13 12 0 10 13 22 13 22s13-12 13-22c0-6-5-12-13-12z"/><circle class="ac" cx="100" cy="32" r="4"/><circle class="f" r="5" cx="0" cy="0"><animateMotion dur="3s" repeatCount="indefinite" path="M10 100C36 100 34 74 58 74S84 62 100 58"/></circle></svg></div></div>
+      </article>
+
+      <article class="j-row">
+        <div class="j-text reveal"><span class="big">٠٦</span><h3>يُغلق البلاغ</h3><p>توثيق الحل، مدة الإنجاز، وتقييم الخدمة.</p></div>
+        <div class="j-node"><span>٦</span></div>
+        <div class="j-art"><div class="blob"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="34"/><path class="ac" d="M44 61l11 11 21-24"/><path d="M60 10v10M60 100v10M10 60h10M100 60h10M25 25l7 7M88 88l7 7M95 25l-7 7M32 88l-7 7"/></svg></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- AMENITIES -->
+<section class="sec arch light" id="amen">
+  <div class="container">
+    <div class="reveal"><span class="eyebrow" style="color:#b8892a">ما يميّزنا</span>
+    <h2 class="h2">سجلّ مرافق كل مسجد… <span style="color:var(--emerald)">بلمسة</span></h2>
+    <p class="lead">نسجّل مرافق ومميزات كل مسجد ليعرف الجميع ما هو متاح فعلياً. مرّر على النقاط لتكتشفها.</p></div>
+    <div class="amen-grid">
+      <div class="scene reveal">
+        <svg viewBox="0 0 900 520" id="scene" role="img" aria-label="رسم توضيحي لمسجد ومرافقه">
+          <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bfe3d6"/><stop offset="1" stop-color="#f7f1de"/></linearGradient></defs>
+          <rect width="900" height="520" fill="url(#sky)"/>
+          <circle class="sun-glow" cx="790" cy="86" r="56" fill="#f2c96b" opacity=".35"/><circle cx="790" cy="86" r="32" fill="#f2c96b"/>
+          <g class="cloud" opacity=".85"><ellipse cx="140" cy="92" rx="48" ry="14" fill="#fff"/><ellipse cx="170" cy="80" rx="30" ry="14" fill="#fff"/></g>
+          <g class="cloud b" opacity=".7"><ellipse cx="300" cy="150" rx="40" ry="11" fill="#fff"/><ellipse cx="322" cy="140" rx="24" ry="11" fill="#fff"/></g>
+          <rect y="470" width="900" height="50" fill="#bcd8ca"/><rect y="490" width="900" height="30" fill="#8fb5a3"/>
+          <path d="M0 506H900" stroke="#fff" stroke-width="3" stroke-dasharray="26 22" opacity=".7"/>
+          <g stroke="#0d211a" stroke-width="2" stroke-linejoin="round">
+            <rect x="250" y="450" width="470" height="20" fill="#e8dfc8"/>
+            <rect x="310" y="260" width="280" height="190" fill="#fffdf6"/>
+            <path d="M340 260C340 190 410 170 450 108C490 170 560 190 560 260Z" fill="#0f7d5c"/>
+            <path d="M450 108V88"/>
+            <rect x="266" y="160" width="28" height="290" fill="#fffdf6"/><rect x="260" y="196" width="40" height="8" fill="#e8dfc8"/><path d="M266 160l14-44 14 44z" fill="#0f7d5c"/>
+            <rect x="606" y="160" width="28" height="290" fill="#fffdf6"/><rect x="600" y="196" width="40" height="8" fill="#e8dfc8"/><path d="M606 160l14-44 14 44z" fill="#0f7d5c"/>
+            <path d="M415 450V400a35 35 0 0 1 70 0V450z" fill="#0f7d5c"/>
+            <path d="M328 350V320a11 11 0 0 1 22 0V350zM372 350V320a11 11 0 0 1 22 0V350zM502 350V320a11 11 0 0 1 22 0V350z" fill="#bfe3d6"/>
+            <circle cx="558" cy="322" r="20" fill="#bfe3d6"/>
+            <path d="M540 470V450h80v20z" fill="#e8dfc8" stroke="none"/>
+            <path d="M420 470v-10h60v10M430 460v-10h40v10" fill="#efe6cf"/>
+            <path d="M335 470L415 470L415 450Z" fill="#cfe0d6"/>
+            <rect x="70" y="340" width="170" height="130" fill="#fffdf6"/><rect x="62" y="330" width="186" height="12" fill="#0f7d5c"/>
+            <rect x="100" y="310" width="42" height="20" rx="3" fill="#dfe9e3"/><rect x="160" y="310" width="42" height="20" rx="3" fill="#dfe9e3"/>
+            <path d="M110 405h44a8 8 0 0 1 8 8v4" fill="none" stroke-width="5"/>
+            <rect x="94" y="430" width="100" height="14" rx="6" fill="#bfe3d6"/>
+            <rect x="656" y="250" width="38" height="200" fill="#cfe9e0"/><rect x="650" y="244" width="50" height="8" fill="#0f7d5c"/>
+            <rect x="736" y="330" width="144" height="140" fill="#fffdf6"/><path d="M760 330a48 48 0 0 1 96 0z" fill="#0f7d5c"/>
+            <path d="M756 420V388a9 9 0 0 1 18 0V420zM799 420V388a9 9 0 0 1 18 0V420zM842 420V388a9 9 0 0 1 18 0V420z" fill="#bfe3d6"/>
+            <path d="M808 282V268" />
+          </g>
+          <g fill="none" stroke="#0d211a" stroke-width="1.2" opacity=".5"><path d="M756 396h18M756 404h18M799 396h18M799 404h18M842 396h18M842 404h18"/></g>
+          <path d="M456 66a10 10 0 1 0 0 14a8 8 0 1 1 0-14z" fill="#e6b85c" stroke="#0d211a" stroke-width="1.2"/>
+          <g class="fan"><circle cx="121" cy="320" r="7" fill="none" stroke="#0d211a" stroke-width="1.6"/><path d="M121 314v12M115 320h12" stroke="#0d211a" stroke-width="1.6"/></g>
+          <g class="fan"><circle cx="181" cy="320" r="7" fill="none" stroke="#0d211a" stroke-width="1.6"/><path d="M181 314v12M175 320h12" stroke="#0d211a" stroke-width="1.6"/></g>
+          <circle class="drop" cx="162" cy="422" r="3" fill="#3aa0e8"/><circle class="drop" cx="162" cy="422" r="3" fill="#3aa0e8" style="animation-delay:-.7s"/>
+          <g stroke="#0d211a" stroke-width="2"><rect class="cabin" x="662" y="350" width="26" height="92" rx="4" fill="#e6b85c"/></g>
+          <path d="M558 314v16M550 322h16" stroke="#0d211a" stroke-width="1.4" fill="none"/>
+          <path d="M112 385a4 4 0 0 1 8 0 4 4 0 0 1-8 0z" fill="none"/>
+          <g><rect x="712" y="404" width="5" height="66" fill="#0d211a"/><rect x="699" y="376" width="31" height="31" rx="7" fill="#1d5fd1" stroke="#0d211a" stroke-width="2"/><text x="714.5" y="399" text-anchor="middle" font-size="22" font-weight="700" fill="#fff" font-family="Arial">P</text></g>
+          <g stroke="#fff" stroke-width="3" opacity=".9"><path d="M470 470l-14 20M510 470l-14 20M550 470l-14 20M590 470l-14 20"/></g>
+          <g class="car"><g transform="translate(0 486)"><path d="M0 22h64v-8l-10-6H36l-8-8H16l-8 8H2z" fill="#e6b85c" stroke="#0d211a" stroke-width="2" stroke-linejoin="round"/><path d="M18 8h8l6 6H14zM36 8h10l6 6H36z" fill="#bfe3d6"/><circle cx="16" cy="24" r="6" fill="#0d211a"/><circle cx="50" cy="24" r="6" fill="#0d211a"/></g></g>
+          <g id="pins"></g>
+        </svg>
+      </div>
+      <ul class="amen-list reveal" id="amenList" style="--d:.15s"></ul>
+    </div>
+  </div>
+</section>
+
+<!-- SCREENS -->
+<section class="sec arch" id="screens">
+  <div class="glow"></div><div class="stars" id="scrStars" style="opacity:.5"></div>
+  <div class="container" style="position:relative">
+    <div class="reveal" style="text-align:center"><span class="eyebrow">شاشات التطبيق</span>
+    <h2 class="h2">من رفع البلاغ… <span class="shimmer">إلى تسليمه</span></h2>
+    <p class="lead" style="margin-inline:auto">جرّب الرحلة بنفسك: اضغط أي شاشة أو أي خطوة لتراها تعمل.</p></div>
+    <div class="phones" id="phones">
+      <!-- phone 1 -->
+      <div class="pw" data-i="0"><div class="phone"><div class="ph-notch"></div><div class="ph-screen col">
+        <div class="ph-head"><small>بلاغ جديد</small><b>وصف المشكلة</b></div>
+        <div class="ph-body">
+          <div class="mapbox"><svg viewBox="0 0 240 106" preserveAspectRatio="xMidYMid slice"><path d="M0 70C50 50 90 80 150 50S220 40 240 30" stroke="#fff" stroke-width="9" fill="none"/><circle class="ripple" cx="120" cy="66" r="14" fill="rgba(230,184,92,.5)"/><g class="pin-drop"><path d="M120 70s11-9 11-17a11 11 0 0 0-22 0c0 8 11 17 11 17z" fill="#e6b85c" stroke="#0d211a" stroke-width="1.5"/><circle cx="120" cy="53" r="4" fill="#0d211a"/></g></svg><div class="toast">📍 تم تحديد الموقع تلقائياً</div></div>
+          <div class="fld"><label>عنوان البلاغ</label><div class="box"><span>تسريب مياه في دورة المياه</span></div></div>
+          <div class="fld"><label>الفئة</label><div class="cats"><i>كهرباء</i><i>سباكة</i><i>تكييف</i><i>نظافة</i></div></div>
+          <div class="thumbs"><div><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="14" rx="3"/><circle cx="12" cy="13" r="3.5"/></svg></div><div><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="14" rx="3"/><circle cx="12" cy="13" r="3.5"/></svg></div></div>
+        </div>
+        <div class="ph-btn">إرسال البلاغ</div>
+      </div></div></div>
+      <!-- phone 2 -->
+      <div class="pw" data-i="1"><div class="phone"><div class="ph-notch"></div><div class="ph-screen col">
+        <div class="ph-head"><small>حالة البلاغ #1042</small><b>تسريب مياه - دورة المياه</b></div>
+        <div class="ph-body" style="padding-top:18px">
+          <div class="st"><span class="dot"><svg viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg></span><div><b>بلاغ مستلم</b><small>٠٨:١٢ ص</small></div></div>
+          <div class="st"><span class="dot"><svg viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg></span><div><b>راجعه المشرف</b><small>٠٨:٢٠ ص</small></div></div>
+          <div class="st"><span class="dot"></span><div><b>أُحيل لشركة الصيانة</b><small>الاتحاد الفني للصيانة</small></div></div>
+          <div class="st"><span class="dot"></span><div><b>الفريق في الطريق</b><small>يصل خلال ١٥ دقيقة</small></div></div>
+          <div class="route"><svg viewBox="0 0 240 84" preserveAspectRatio="xMidYMid slice"><path d="M10 70C60 70 70 30 120 40S200 20 225 20" fill="none" stroke="#fff" stroke-width="8"/><path d="M10 70C60 70 70 30 120 40S200 20 225 20" fill="none" stroke="#0f7d5c" stroke-width="2" stroke-dasharray="4 5"/><path d="M225 20s8-6 8-12a8 8 0 0 0-16 0c0 6 8 12 8 12z" fill="#e6b85c"/><circle r="6" fill="#0f7d5c" stroke="#fff" stroke-width="2"><animateMotion dur="4s" repeatCount="indefinite" path="M10 70C60 70 70 30 120 40S200 20 225 20"/></circle></svg></div>
+        </div>
+      </div></div></div>
+      <!-- phone 3 -->
+      <div class="pw" data-i="2"><div class="phone"><div class="ph-notch"></div><div class="ph-screen col">
+        <div class="ph-head"><small>إغلاق البلاغ</small><b>تم حل المشكلة</b></div>
+        <div class="done-wrap"><svg viewBox="0 0 120 120"><g class="rays"><path d="M60 6v12M60 102v12M6 60h12M102 60h12M22 22l8 8M90 90l8 8M98 22l-8 8M30 90l-8 8"/></g><circle class="ring" pathLength="1" cx="60" cy="60" r="38"/><path class="tick" pathLength="1" d="M42 61l12 12 24-27"/></svg></div>
+        <div class="ph-body" style="text-align:center">
+          <b style="font-size:15px">تم إغلاق البلاغ بنجاح</b>
+          <small style="color:var(--muted)">استُبدل الصمام المتسرب واختُبر التصريف</small>
+          <div class="kv"><span style="color:var(--muted)">مدة الإنجاز</span><b>ساعتان و١٥ دقيقة</b></div>
+          <div><small style="color:var(--muted)">قيّم الخدمة</small><div class="rate"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></div></div>
+        </div>
+      </div></div></div>
+    </div>
+    <div class="steps-nav" id="stepsNav">
+      <button class="on" data-i="0"><i>١</i>رفع البلاغ</button>
+      <button data-i="1"><i>٢</i>المتابعة والإحالة</button>
+      <button data-i="2"><i>٣</i>التسليم والإغلاق</button>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="sec arch light" id="features">
+  <div class="container">
+    <div class="reveal" style="text-align:center"><span class="eyebrow" style="color:#b8892a">المميزات</span>
+    <h2 class="h2">كل ما تحتاجه لتشغيل مسجدك <span style="color:var(--emerald)">بثقة</span></h2></div>
+    <div class="f-grid">
+      <div class="f reveal"><span class="n">٠١</span>
+        <svg class="ic i-pin" viewBox="0 0 48 48"><ellipse class="rp ac" cx="24" cy="43" rx="10" ry="3"/><g class="p"><path d="M24 40s14-11 14-22a14 14 0 0 0-28 0c0 11 14 22 14 22z"/><circle class="ac" cx="24" cy="18" r="5"/></g></svg>
+        <h3>بلاغ موثّق بالموقع الجغرافي</h3><p>كل بلاغ يُرفق تلقائياً بإحداثيات المسجد، فلا لبس في تحديد الموقع.</p></div>
+      <div class="f reveal" style="--d:.1s"><span class="n">٠٢</span>
+        <svg class="ic i-stage" viewBox="0 0 48 48"><circle cx="8" cy="24" r="4"/><circle cx="24" cy="24" r="4"/><circle cx="40" cy="24" r="4"/><path d="M12 24h8M28 24h8"/><circle class="mv fi" cx="8" cy="24" r="2.4"/></svg>
+        <h3>متابعة مراحل البلاغ</h3><p>تتبّع مباشر من الاستلام حتى الإغلاق بشفافية كاملة لجميع الأطراف.</p></div>
+      <div class="f reveal" style="--d:.2s"><span class="n">٠٣</span>
+        <svg class="ic i-bars" viewBox="0 0 48 48"><path d="M6 42h36"/><rect x="10" y="26" width="7" height="16" rx="2"/><rect class="ac" x="21" y="12" width="7" height="30" rx="2"/><rect x="32" y="20" width="7" height="22" rx="2"/></svg>
+        <h3>تقارير للمشرف العام</h3><p>مؤشرات أداء لحظية على مستوى جميع المساجد لدعم اتخاذ القرار.</p></div>
+      <div class="f reveal"><span class="n">٠٤</span>
+        <svg class="ic i-reg" viewBox="0 0 48 48"><rect x="10" y="6" width="28" height="36" rx="5"/><path d="M17 16h14M17 24h14"/><path class="tk ac" pathLength="1" d="M17 33l4 4 9-9"/></svg>
+        <h3>سجل المرافق والأصول</h3><p>توثيق مرافق كل مسجد وأصوله ليبقى الجميع على اطلاع بما هو متاح.</p></div>
+      <div class="f reveal" style="--d:.1s"><span class="n">٠٥</span>
+        <svg class="ic i-shield" viewBox="0 0 48 48"><path class="sh" d="M24 4l16 6v12c0 10-7 17-16 20C15 39 8 32 8 22V10z"/><path class="ac" d="M17 23l5 5 9-10"/></svg>
+        <h3>صلاحيات متدرّجة</h3><p>كل دور يرى ويتحكم فيما يخصّه فقط، بأمان وضبط كامل للوصول.</p></div>
+      <div class="f reveal" style="--d:.2s"><span class="n">٠٦</span>
+        <svg class="ic i-bell" viewBox="0 0 48 48"><path class="bl" d="M12 32V22a12 12 0 0 1 24 0v10l4 4H8z"/><path class="ac" d="M20 41a4 4 0 0 0 8 0"/></svg>
+        <h3>تنبيهات فورية</h3><p>إشعارات لحظية عند رفع بلاغ جديد أو تغيّر حالته لأي طرف معني.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="sec arch" id="partners">
+  <div class="container p-head reveal">
+    <span class="eyebrow">الشركاء</span>
+    <h2 class="h2">شاركنا وكن جزءاً من <span class="shimmer">الخدمة</span></h2>
+    <p class="lead">ندعو شركات الصيانة والنظافة والموردين للانضمام إلى شبكة «مساجد» والوصول المباشر إلى بلاغات موثّقة ومحدّدة الموقع في مختلف الأحياء.</p>
+    <a href="#cta" class="btn btn-gold">انضم كشريك</a>
+  </div>
+  <div class="marquee reveal"><div class="track" id="track"></div></div>
+</section>
+
+<!-- CTA -->
+<section class="sec arch" id="cta">
+  <div class="stars" id="ctaStars" style="opacity:.7"></div>
+  <div class="container inner reveal">
+    <span class="eyebrow">ابدأ الآن</span>
+    <h2 class="h2">اجعل كل مسجد… <span class="shimmer">تحت عينك</span></h2>
+    <p class="lead">نجهّز حسابكم ونربط أئمتكم ومشرفيكم بالمنصة خلال أيام.</p>
+    <div class="hero-btns"><a href="#partners" class="btn btn-gold">انضم كشريك</a><a href="#partners" class="btn btn-line">تواصل مع فريق الشراكات</a></div>
+  </div>
+  <svg class="cta-sky" id="ctaSky" viewBox="0 0 1440 260" preserveAspectRatio="xMidYMax slice" aria-hidden="true"></svg>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="f-cols">
+      <div><a href="#top" class="logo disp" style="margin-bottom:14px"><span class="logo-mark"><svg viewBox="0 0 32 32"><path d="M6 28V18h20v10"/><path d="M9 18c0-5 4-6 7-11 3 5 7 6 7 11"/><path d="M16 7V3"/></svg></span>مساجد</a><p>منصة سعودية لإدارة تشغيل المساجد، تربط الأدوار الميدانية والإشرافية في رحلة بلاغ واحدة.</p></div>
+      <div><h4>المنصة</h4><ul><li><a href="#idea">الفكرة</a></li><li><a href="#journey">رحلة البلاغ</a></li><li><a href="#screens">الشاشات</a></li><li><a href="#features">المميزات</a></li></ul></div>
+      <div><h4>الشركاء</h4><ul><li><a href="#partners">انضم كشريك</a></li></ul></div>
+      <div><h4>تواصل معنا</h4><ul><li>info@masajid.sa</li><li>الرياض، المملكة العربية السعودية</li></ul></div>
+    </div>
+    <div class="copy"><span>© <span id="year"></span> منصة مساجد. جميع الحقوق محفوظة.</span><span>صُنع بعناية لخدمة بيوت الله</span></div>
+  </div>
+</footer>
+<script src="masgad1.js"></script>
+</body>
+</html>
